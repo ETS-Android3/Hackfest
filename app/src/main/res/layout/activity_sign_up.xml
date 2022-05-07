@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentSignIn.SignUpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/studentsignupbbg">
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profiledp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/studentsignup"/>
+    <Button
+        android:id="@+id/btnprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/add_profiledp"
+        android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/editTxtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/confirm_pass"
+            android:hint="Name"
+            android:textColorHint="#112D4E"
+            android:textColor="#112D4E"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/montserrat"/>
+
+    <EditText
+        android:id="@+id/editTxtMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/confirm_pass"
+        android:hint="College Email ID"
+        android:textColorHint="#112D4E"
+        android:textColor="#112D4E"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="15dp"/>
+
+
+    <EditText
+        android:id="@+id/editTxtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPassword"
+        android:background="@drawable/confirm_pass"
+        android:hint="Password"
+        android:textColorHint="#112D4E"
+        android:textColor="#112D4E"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="15dp"/>
+
+    <EditText
+        android:id="@+id/editTxtConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPassword"
+        android:background="@drawable/confirm_pass"
+        android:hint="Confirm Password"
+        android:textColorHint="#112D4E"
+        android:textColor="#112D4E"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="15dp"/>
+        <EditText
+            android:id="@+id/ed_hostel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/confirm_pass"
+            android:hint="Enter Hostel Name"
+            android:textColorHint="#112D4E"
+            android:textColor="#112D4E"
+            android:fontFamily="@font/montserrat"
+            android:paddingHorizontal="15dp"/>
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/verify_email"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/signup_light"
+        android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/already"/>
+            <ImageView
+                android:id="@+id/goToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_here"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

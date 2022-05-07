@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/colledge_noticeboard"
+            android:title="Official Notice Board" />
+        <item
+            android:id="@+id/time_table"
+            android:title="Time Table" />
+
+        <item
+            android:id="@+id/colledge_maps"
+            android:title="College Maps" />
+
+        <item
+            android:id="@+id/public_timeline"
+            android:title="Public Timeline" />
+        <item
+            android:id="@+id/add_a_complaint"
+            android:checked="true"
+            android:title="Add a Complaint" />
+        <item
+            android:id="@+id/my_complaints"
+            android:title="My Complaints" />
+
+        <item
+            android:id="@+id/club_info"
+            android:title="Club Details" />
+
+        <item
+            android:id="@+id/club_updates"
+            android:title="Club Updates" />
+
+        <item
+            android:id="@+id/healthExperts"
+            android:title="Current Doctor Schedule" />
+
+        <item
+            android:id="@+id/event_updates"
+            android:title="Event Updates" />
+
+        <item
+            android:id="@+id/mess_scanner"
+            android:title="Mess Attendance" />
+        <item
+            android:id="@+id/mess_daily_schedule"
+            android:title="Mess Daily Menu" />
+        <item
+            android:id="@+id/mess_weeklly_schedule"
+            android:title="Mess Week Wise Menu" />
+
+        <item
+            android:id="@+id/lost_n_found"
+            android:title="Lost And Found" />
+
+        <item
+            android:id="@+id/college_faces"
+            android:title="Faces of College"/>
+
+        <item
+            android:id="@+id/library_capacity"
+            android:title="Library Capacity"/>
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/ForgotPassword"
+                android:title="Change Password" />
+            <item
+                android:id="@+id/log_out"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

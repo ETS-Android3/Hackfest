@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title=""/>
+    <item
+        android:id="@+id/MessRecords"
+        android:title="Mess Attendance Records" />
+    <item
+        android:id="@+id/CurrentMessRecords"
+        android:title="Today's Mess Menu" />
+    <item
+        android:id="@+id/UpdateMessRecords"
+        android:title="Update Today's Menu" />
+    <item
+        android:id="@+id/qrCode"
+        android:title="Mess QR Code" />
+    <item
+        android:id="@+id/UpdateFullMenu"
+        android:title="Update Week's Menu" />
+    <item android:title="" />
+    <item
+        android:id="@+id/All_notice"
+        android:title="Official Notice Board" />
+    <item
+        android:id="@+id/EventUpdates"
+        android:title="Event Notices" />
+    <item
+        android:id="@+id/club_updates"
+        android:title="Club Updates" />
+    <item
+        android:id="@+id/Open_Maps"
+        android:title="College Maps" />
+    <item
+        android:title=""/>
+    <item
+        android:id="@+id/ForgotPassword"
+        android:title="Change Password" />
+    <item
+        android:id="@+id/LogOut"
+        android:title="Log Out " />
+</menu>
