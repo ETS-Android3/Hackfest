@@ -44,7 +44,7 @@ public class TakeImageActivity extends AppCompatActivity {
 
     private static final int REQUEST_ID_MULTIPLE_PERMISSIONS = 101;
     private ActivityTakeImageBinding binding;
-    private String URL = "https://faceofcampus.herokuapp.com/predict";
+    private String URL = "https://facereco23.herokuapp.com/predict";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,10 +52,6 @@ public class TakeImageActivity extends AppCompatActivity {
 
         binding = ActivityTakeImageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-
-
-
 
         binding.button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -75,6 +71,25 @@ public class TakeImageActivity extends AppCompatActivity {
                 if (checkAndRequestPermissions(TakeImageActivity.this)){
                     chooseImage(TakeImageActivity.this);
                 }
+            }
+        });
+
+        binding.reportIssue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        binding.uploadNewData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bitmap bitmapImage = binding.imageView.getDrawingCache();
+                Intent intent = new Intent(TakeImageActivity.this, AddNewDataActivity.class);
+                intent.putExtra("image", bitmapImage);
+                intent.putExtra("update",0);
+                startActivity(intent);
+
             }
         });
 
@@ -104,9 +119,7 @@ public class TakeImageActivity extends AppCompatActivity {
         return true;
     }
 
-
     // Handled permission Result
-
 
     private void chooseImage(Context context) {
 
@@ -231,6 +244,7 @@ public class TakeImageActivity extends AppCompatActivity {
                     String name = jsonObject.getString("name");
                     String place = jsonObject.getString("place");
                     String branch = jsonObject.getString("branch");
+                    String studying = jsonObject.getString("studying");
                     String image = jsonObject.getString("image");
                     String year = jsonObject.getString("year");
 
@@ -244,7 +258,7 @@ public class TakeImageActivity extends AppCompatActivity {
                     responseString[0] = name;
                     binding.nameFetched.setText(name);
                     binding.placeFetched.setText(place);
-                    binding.branchFetched.setText(branch+"\n("+txt+")");
+                    binding.branchYearFetched.setText(branch+"\n("+txt+")");
 
                     binding.dataPalate.setVisibility(View.VISIBLE);
                     binding.notFoundPalate.setVisibility(View.INVISIBLE);
@@ -291,9 +305,6 @@ public class TakeImageActivity extends AppCompatActivity {
 
         return Base64.encodeToString(outputStream.toByteArray(), Base64.DEFAULT);
     }
-
-
-
 
 
 }

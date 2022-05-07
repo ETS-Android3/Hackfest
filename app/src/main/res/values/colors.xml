@@ -16,12 +16,15 @@
     <color name="lt_blu">#3f72AF</color>
     <color name="mapboxWhite">#ffffff</color>
     <color name="mapboxBlue">#4264fb</color>
-    <color name="mapboxGrayLight">#c6d2e1</color>
+    <color name="mapboxGrayLight">#e8f0f2</color>
     <color name="mapboxPink">#ee4e8b</color>
     <color name="mapboxYellow">#d9d838</color>
     <color name="mapboxRed">#b43b71</color>
+    <color name="text_color_primary">#053742</color>
+    <color name="stroke_gray">#053742</color>
+    <color name="card_background_gray">#e8f0f2</color>
 
-    <color name="color_one">#fb7268</color>
+    <color name="color_one">#db6e39</color>
     <color name="color_white">#ededf2</color>
     <color name="color_two">#E3E0E0</color>
 

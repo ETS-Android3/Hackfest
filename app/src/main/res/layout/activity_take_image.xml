@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/gradient_background"
     tools:context=".faceofcampus.TakeImageActivity">
 
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
         android:translationZ="10dp"
         android:background="@color/white"
-        android:visibility="invisible"
         android:src="@drawable/image_scenary"
         app:layout_constraintBottom_toTopOf="@+id/materialCardView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +40,7 @@
             android:gravity="center_horizontal"
             android:paddingHorizontal="12dp"
             android:text="Upload or click any picture to recognise your college students."
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:fontFamily="@font/montserrat"
             android:textStyle="bold"/>
@@ -52,8 +51,9 @@
             android:layout_height="250dp"
             android:layout_marginTop="100dp"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/white"
-            android:src="@drawable/ic_baseline_add_a_photo_64" />
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_baseline_add_a_photo_64"
+            app:tint="@color/white" />
 
 
     </LinearLayout>
@@ -62,10 +62,10 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/materialCardView"
         android:layout_width="match_parent"
-        android:layout_height="580dp"
+        android:layout_height="610dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="5dp"
-        android:visibility="invisible"
+        android:layout_marginBottom="-20dp"
         app:cardBackgroundColor="@color/mapboxGrayLight"
         app:strokeWidth="10dp"
         app:strokeColor="@color/colorPrimary"
@@ -83,8 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility="invisible"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="70dp"
                 android:paddingVertical="36dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -144,13 +143,35 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/branch_fetched"
+                    android:id="@+id/branch_year_fetched"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Electrical Engineering (II year)"
+                    android:text="Electrical Engineering (2'nd year)"
+                    android:textColor="#112D4E"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Field Of Interest"
+                    android:textColor="#112D4E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/field_of_interest_fetched"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Android Development"
                     android:textColor="#112D4E"
                     android:textSize="16dp" />
 
