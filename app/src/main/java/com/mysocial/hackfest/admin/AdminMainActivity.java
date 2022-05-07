@@ -21,9 +21,13 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.mysocial.hackfest.MapActivity;
+import com.mysocial.hackfest.MessLoginSelecterActivity;
 import com.mysocial.hackfest.R;
 import com.mysocial.hackfest.SplashScreenActivity;
 import com.mysocial.hackfest.classes.Data;
+import com.mysocial.hackfest.eventCategory.FragmentEvent;
+import com.mysocial.hackfest.studentFragment.FragmentUpdates;
 
 import org.jetbrains.annotations.NotNull;
 

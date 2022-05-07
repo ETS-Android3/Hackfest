@@ -1,4 +1,4 @@
-package com.mysocial.hackfest.adapters;
+package com.mysocial.hackfest.RecyclerAdapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;

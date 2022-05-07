@@ -1,4 +1,4 @@
-package com.mysocial.hackfest;
+package com.mysocial.hackfest.ViewPagerAdapters;
 
 import android.content.Context;
 
@@ -8,10 +8,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.example.appitup.classes.Data;
-import com.example.appitup.complaintCategory.AcademicFragment;
-import com.example.appitup.complaintCategory.AdministrativeFragment;
-import com.example.appitup.complaintCategory.HostelFragment;
+import com.mysocial.hackfest.classes.Data;
+import com.mysocial.hackfest.complaintCategory.AcademicFragment;
+import com.mysocial.hackfest.complaintCategory.AdministrativeFragment;
+import com.mysocial.hackfest.complaintCategory.HostelFragment;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -29,7 +29,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     private String studentAdmin;
 
 
-    public ViewPagerAdapter(@NonNull FragmentManager fm, int behavior, Context context, List<Data> complaintList , String studentAdmin) {
+    public ViewPagerAdapter(@NonNull FragmentManager fm, int behavior, Context context, List<Data> complaintList, String studentAdmin) {
         super(fm, behavior);
         this.tabCount = behavior;
         this.context = context;
@@ -47,16 +47,13 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
         for (int i = 0; i < complaintList.size(); i++) {
 
             Data data = complaintList.get(i);
-            if (data.getCategory().equalsIgnoreCase("academic"))
-            {
+            if (data.getCategory().equalsIgnoreCase("academic")) {
                 academicComplaintList.add(data);
             }
-            if (data.getCategory().equalsIgnoreCase("administrative"))
-            {
+            if (data.getCategory().equalsIgnoreCase("administrative")) {
                 administrativeComplaintList.add(data);
             }
-            if (data.getCategory().equalsIgnoreCase("hostel"))
-            {
+            if (data.getCategory().equalsIgnoreCase("hostel")) {
                 hostelComplaintList.add(data);
             }
         }
@@ -67,11 +64,11 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new AcademicFragment(context, academicComplaintList,studentAdmin);
+                return new AcademicFragment(context, academicComplaintList, studentAdmin);
             case 1:
-                return new HostelFragment(context,hostelComplaintList,studentAdmin);
+                return new HostelFragment(context, hostelComplaintList, studentAdmin);
             case 2:
-                return new AdministrativeFragment(context,administrativeComplaintList,studentAdmin);
+                return new AdministrativeFragment(context, administrativeComplaintList, studentAdmin);
             default:
                 return null;
         }

@@ -1,4 +1,4 @@
-package com.mysocial.hackfest;
+package com.mysocial.hackfest.ViewPagerAdapters;
 
 import android.content.Context;
 
@@ -8,8 +8,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.example.appitup.classes.Updates;
-import com.example.appitup.eventCategory.FragmentEventUpdates;
+import com.mysocial.hackfest.classes.Updates;
+import com.mysocial.hackfest.eventCategory.FragmentEventUpdates;
 
 import org.jetbrains.annotations.NotNull;
 
