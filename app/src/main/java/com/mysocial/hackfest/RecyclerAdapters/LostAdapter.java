@@ -1,4 +1,4 @@
-package com.mysocial.hackfest.lostNFound;
+package com.mysocial.hackfest.RecyclerAdapters;
 
 import android.view.LayoutInflater;
 import android.view.View;

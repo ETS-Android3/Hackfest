@@ -23,6 +23,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.mysocial.hackfest.R;
+import com.mysocial.hackfest.RecyclerAdapters.LostAdapter;
 import com.mysocial.hackfest.classes.LostNFound;
 import com.mysocial.hackfest.classes.StudentsInfo;
 import com.mysocial.hackfest.databinding.ActivityLostNfoundBinding;

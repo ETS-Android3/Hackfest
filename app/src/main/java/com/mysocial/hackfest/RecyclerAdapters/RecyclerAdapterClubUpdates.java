@@ -1,4 +1,4 @@
-package com.mysocial.hackfest;
+package com.mysocial.hackfest.RecyclerAdapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.appitup.classes.Updates;
+import com.mysocial.hackfest.R;
+import com.mysocial.hackfest.classes.Updates;
 
 import org.jetbrains.annotations.NotNull;
 

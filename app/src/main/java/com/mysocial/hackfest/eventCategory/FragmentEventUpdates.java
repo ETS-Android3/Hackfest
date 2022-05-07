@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mysocial.hackfest.R;
-import com.mysocial.hackfest.RecyclerAdapterClubUpdates;
+import com.mysocial.hackfest.RecyclerAdapters.RecyclerAdapterClubUpdates;
 import com.mysocial.hackfest.RecyclerAdapters.RecyclerAdapterNotice;
 import com.mysocial.hackfest.SingleEventUpdateDisplay;
 import com.mysocial.hackfest.classes.Updates;
