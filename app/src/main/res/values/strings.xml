@@ -18,7 +18,6 @@
     <string name="access_token" translatable="false">pk.eyJ1IjoiYXVnc2Frc2hhbSIsImEiOiJja3BlMHYwMWwxMDJyMm5ycmxvczVsczY1In0.Ja5PitQTJdlhqAoatZYu_g</string>
     <string name="user_location_permission_explanation">This app needs location permissions to show its functionality.</string>
     <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_face_book_login">FaceBookLoginActivity</string>
     <!-- Strings used for fragments for navigation -->
@@ -41,4 +40,5 @@
     <string name="def_place">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis leo urna. Vestibulum dictum velit vel ex condimentum, eget facilisis orci porttitor. Nulla malesuada porttitor imperdiet.</string>
     <string name="students_activity_centers">Ranging from games like badminton, carrom, chess, billiards, etc to hobby clubs of literary, photography, dance genres, this is a perfect place for one to pursue his/her passion besides the academic learning.</string>
     <string name="heritage_building">The face, the heart and the soul of ISM. It has been standing with pride ever since its birth and has been a spectator of numerous historical events like the World War II, India\'s Independence and many more.The first batch of students, the first room of departments, the first fear of exams and the first memories of joy were made under its roof.</string>
+    <string name="navigation_guidance_day">mapbox://styles/mapbox/navigation-guidance-day-v4</string>
 </resources>
