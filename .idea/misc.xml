@@ -3,10 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable-mdpi/ic_launcher_background.xml" value="0.124" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable/gradient_background.xml" value="0.2055" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable/ic_icon_feather_st.xml" value="0.2055" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable/ic_launcher_background.xml" value="0.124" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable/ing.xml" value="0.124" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable/primary_gradient.xml" value="0.2055" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/font/montserrat.xml" value="0.284375" />
-        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/complaint_card.xml" value="0.4" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/activity_add_new_data_activtiy.xml" value="0.264" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/activity_sign_in.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/activity_take_image.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/complaint_card.xml" value="0.264" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/content_admin_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/recycler_view_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/font/montserrat.xml" value="0.23981481481481481" />

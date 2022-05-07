@@ -19,6 +19,7 @@ public class Data implements Serializable {
 
     public Data ()
     {
+
     }
 
     public Data(String category, String complaintMessage, String complaintPicUrl, String complaintStatus, String complaintTitle, Boolean publicPrivate, String rollNo, Boolean seen, String studentName, String studentProfilePicUrl, int upVotes, String comment, String email) {

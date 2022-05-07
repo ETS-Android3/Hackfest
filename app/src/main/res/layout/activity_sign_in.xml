@@ -54,7 +54,7 @@
         android:textSize="20sp"
         android:inputType="textPassword"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,10 +68,12 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_marginTop="5dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="NEW HERE?"
+            android:textColor="@color/text_color_primary"
             android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal"
             android:textSize="15sp"/>

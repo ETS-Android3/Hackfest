@@ -4,28 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".faceofcampus.AddNewDataActivity">
 
     <ImageView
         android:id="@+id/image_view"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
         android:background="@color/white"
         android:src="@drawable/image_scenary"
         android:translationZ="10dp"
         app:layout_constraintBottom_toTopOf="@+id/materialCardView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/materialCardView" />
+        app:layout_constraintTop_toTopOf="@id/materialCardView"
+        app:layout_constraintVertical_bias="0.658" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/materialCardView"
         android:layout_width="match_parent"
-        android:layout_height="580dp"
+        android:layout_height="630dp"
         app:cardBackgroundColor="@color/mapboxGrayLight"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="36dp"
         app:cardElevation="5dp"
+        android:layout_marginBottom="-20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,10 +62,12 @@
 
                 <EditText
                     android:id="@+id/name_u"
+                    android:backgroundTint="@color/stroke_gray"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginTop="6dp"
+                    android:inputType="textPersonName"
                     android:fontFamily="@font/montserrat"
                     android:hint="Full Name"
                     android:textColor="#112D4E"
@@ -82,38 +87,18 @@
 
                 <EditText
                     android:id="@+id/place_u"
+                    android:backgroundTint="@color/stroke_gray"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
                     android:layout_marginTop="6dp"
+                    android:inputType="textCapSentences"
                     android:fontFamily="@font/montserrat"
                     android:hint="City, State"
                     android:textColor="#112D4E"
                     android:textColorHint="#787B8A"
                     android:textSize="16dp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="16dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="Branch"
-                    android:textColor="#112D4E"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/branch_u"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="16dp"
-                    android:layout_marginTop="6dp"
-                    android:fontFamily="@font/montserrat"
-                    android:hint="Electrical Engineering"
-                    android:textColor="#112D4E"
-                    android:textColorHint="#787B8A"
-                    android:textSize="16dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -122,33 +107,104 @@
                     android:orientation="horizontal"
                     android:paddingHorizontal="6dp">
 
-
-                    <TextView
+                    <LinearLayout
+                        android:orientation="vertical"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginHorizontal="16dp"
-                        android:fontFamily="@font/montserrat"
-                        android:text="Year"
-                        android:textColor="#112D4E"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:layout_weight="2">
 
-                    <EditText
-                        android:id="@+id/year_u"
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Branch"
+                            android:textColor="#112D4E"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/branch_u"
+                            android:backgroundTint="@color/stroke_gray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_marginTop="6dp"
+                            android:ems="12"
+                            android:inputType="textCapSentences"
+                            android:fontFamily="@font/montserrat"
+                            android:hint="Electrical Engineering"
+                            android:textColor="#112D4E"
+                            android:textColorHint="#787B8A"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="16dp"
-                        android:layout_marginTop="6dp"
-                        android:fontFamily="@font/montserrat"
-                        android:hint="2"
-                        android:inputType="number"
-                        android:textColor="#112D4E"
-                        android:textColorHint="#787B8A"
-                        android:textSize="16dp" />
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="48dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Year"
+                            android:textColor="#112D4E"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/year_u"
+                            android:backgroundTint="@color/stroke_gray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/montserrat"
+                            android:hint="2"
+                            android:ems="2"
+                            android:inputType="number"
+                            android:textColor="#112D4E"
+                            android:textColorHint="#787B8A"
+                            android:textSize="16dp" />
+
+
+
+
+                    </LinearLayout>
+
+
+
 
                 </LinearLayout>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Field of Interest"
+                    android:textColor="#112D4E"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/field_of_interest_u"
+                    android:backgroundTint="@color/stroke_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="6dp"
+                    android:inputType="textCapSentences"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Android Development, etc"
+                    android:textColor="#112D4E"
+                    android:textColorHint="#787B8A"
+                    android:textSize="16dp" />
 
             </LinearLayout>
 
@@ -165,6 +221,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 app:cornerRadius="16dp"
+                app:layout_constraintVertical_bias="0.3"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

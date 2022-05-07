@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="360dp"
         app:cardCornerRadius="2sp"
-        app:cardBackgroundColor="#e8f0f2"
+        app:cardBackgroundColor="@color/card_background_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
@@ -61,30 +61,10 @@
                 android:background="@color/stroke_gray"
                 app:layout_constraintTop_toBottomOf="@id/date" />
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/color_one"
-                app:cardCornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="@+id/view2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/student_admission_no"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="8dp"
-                    android:layout_marginVertical="2dp"
-                    android:text="Pending"
-                    android:textColor="@color/white"
-                    android:textSize="11sp" />
-
-            </com.google.android.material.card.MaterialCardView>
 
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/complaint_head"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
@@ -97,15 +77,30 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/view2" />
 
+            <TextView
+                android:id="@+id/complaint_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:maxLength="80"
+                android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ......….eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+                android:textColor="#053742"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/complaint_head"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/complaint_head" />
+
             <View
                 android:id="@+id/view3"
                 android:layout_width="0.3dp"
-                android:layout_height="120dp"
+                android:layout_height="110dp"
                 android:background="@color/stroke_gray"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.15"
-                app:layout_constraintStart_toEndOf="@+id/textView4"
-                app:layout_constraintTop_toTopOf="@+id/textView4" />
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/complaint_head"
+                app:layout_constraintTop_toTopOf="@+id/complaint_head" />
 
             <ListView
                 android:id="@+id/tags"
@@ -118,7 +113,44 @@
                 app:layout_constraintStart_toEndOf="@+id/view3"
                 app:layout_constraintTop_toTopOf="@+id/view3" />
 
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pdf_attached_1_button"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:background="@color/card_background_gray"
+                android:text="attached pdf"
+                android:textSize="9sp"
+                app:cornerRadius="16dp"
+                android:layout_marginTop="16dp"
+                app:icon="@drawable/ic_icon_metro_file"
+                app:iconPadding="4dp"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/complaint_description"
+                app:strokeColor="@color/stroke_gray"
+                app:strokeWidth="0.5dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pdf_attached_2_button"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginStart="12dp"
+                android:background="@color/card_background_gray"
+                android:text="attached pdf 2"
+                android:textAllCaps="false"
+                android:textSize="9sp"
+                app:cornerRadius="16dp"
+                app:icon="@drawable/ic_icon_metro_file"
+                app:iconPadding="4dp"
+                app:layout_constraintStart_toEndOf="@+id/pdf_attached_1_button"
+                app:layout_constraintTop_toTopOf="@+id/pdf_attached_1_button"
+                app:strokeColor="@color/stroke_gray"
+                app:strokeWidth="0.5dp" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
     </com.google.android.material.card.MaterialCardView>
