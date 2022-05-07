@@ -71,9 +71,9 @@ dependencies {
     implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
     implementation 'commons-net:commons-net:3.6'
 
-    //pdf viewer
+    //photo viewer
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
-    implementation 'com.github.barteksc:android-pdf-viewer:2.0.2'
-    implementation 'com.commit451:PhotoView:1.2.4'
-    implementation 'commons-net:commons-net:3.6'
+
+    //pdf viewer
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
 }
