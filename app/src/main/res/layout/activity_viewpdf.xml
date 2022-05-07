@@ -43,6 +43,7 @@
             </LinearLayout>
 
         </androidx.appcompat.widget.Toolbar>
+
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/abc"
         android:layout_width="match_parent"
