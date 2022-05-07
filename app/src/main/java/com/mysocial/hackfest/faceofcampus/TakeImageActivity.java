@@ -49,7 +49,6 @@ public class TakeImageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityTakeImageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 

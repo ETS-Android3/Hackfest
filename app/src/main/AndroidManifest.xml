@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Hackfest"
+        android:theme="@style/Theme.MaterialComponents"
         tools:replace="android:appComponentFactory"
         tools:targetApi="p">
 
@@ -58,10 +58,12 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".ViewClubInfoActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".ClubInfoActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".SingleEventUpdateDisplay"
             android:screenOrientation="portrait"
@@ -173,7 +175,8 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".studentFragment.StudentMainActvity"
-            android:screenOrientation="fullSensor" />
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".admin.AdminMainActivity"
             android:screenOrientation="fullSensor"
