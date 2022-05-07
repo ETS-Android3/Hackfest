@@ -40,4 +40,5 @@
     <string name="def_place">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis leo urna. Vestibulum dictum velit vel ex condimentum, eget facilisis orci porttitor. Nulla malesuada porttitor imperdiet.</string>
     <string name="students_activity_centers">Ranging from games like badminton, carrom, chess, billiards, etc to hobby clubs of literary, photography, dance genres, this is a perfect place for one to pursue his/her passion besides the academic learning.</string>
     <string name="heritage_building">The face, the heart and the soul of ISM. It has been standing with pride ever since its birth and has been a spectator of numerous historical events like the World War II, India\'s Independence and many more.The first batch of students, the first room of departments, the first fear of exams and the first memories of joy were made under its roof.</string>
+    <string name="navigation_guidance_day">mapbox://styles/mapbox/navigation-guidance-day-v4</string>
 </resources>
