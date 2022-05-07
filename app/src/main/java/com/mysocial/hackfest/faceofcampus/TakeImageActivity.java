@@ -164,19 +164,19 @@ public class TakeImageActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode , permissions , grantResults );
         switch (requestCode) {
             case REQUEST_ID_MULTIPLE_PERMISSIONS:
+
+                List<String> listPermissionsNeeded = new ArrayList<>();
                 if (ContextCompat.checkSelfPermission(TakeImageActivity.this,
                         Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(TakeImageActivity.this,
-                            "FlagUp Requires Access to Camara.", Toast.LENGTH_SHORT)
-                            .show();
 
-                } else if (ContextCompat.checkSelfPermission(TakeImageActivity.this,
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(TakeImageActivity.this,
-                            "FlagUp Requires Access to Your Storage.",
-                            Toast.LENGTH_SHORT).show();
 
-                } else {
+                    listPermissionsNeeded
+                            .add(Manifest.permission.CAMERA);
+                    ActivityCompat.requestPermissions(TakeImageActivity.this, listPermissionsNeeded
+                                    .toArray(new String[listPermissionsNeeded.size()]),
+                            REQUEST_ID_MULTIPLE_PERMISSIONS);
+
+                }  else {
                     chooseImage(TakeImageActivity.this);
                 }
                 break;

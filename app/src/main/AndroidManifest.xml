@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="@string/app_name"
@@ -25,6 +26,7 @@
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
+            android:name=".faceofcampus.TakeImageActivity" />
             android:name=".faceofcampus.TakeImageActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
@@ -38,24 +40,19 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".HealthManagerActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".HealthUpdaterActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".HealthActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MessLoginSelecterActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ClubInfoPusherActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ViewClubInfoActivity"
             android:screenOrientation="portrait"
@@ -149,7 +146,6 @@
         <activity
             android:name=".admin.AdminSingleComplaintActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action
@@ -163,12 +159,10 @@
         </activity>
         <activity
             android:name=".EditProfileActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ImageViewActivity"
-            android:screenOrientation="fullSensor"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".studentFragment.SingleComplaintDisplay"
             android:screenOrientation="fullSensor"
@@ -180,22 +174,20 @@
         <activity
             android:name=".admin.AdminMainActivity"
             android:screenOrientation="fullSensor"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".StudentSignIn.SignUpActivity"
-            android:screenOrientation="fullSensor"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="fullSensor" />
         <activity android:name=".studentFragment.QRCodeScanner"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".StudentSignIn.SignInActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".studentFragment.MessScannerDisplay"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="fullSensor" />
+        <activity android:name=".studentFragment.MessScannerDisplay" />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
