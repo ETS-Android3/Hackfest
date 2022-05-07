@@ -11,11 +11,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.appitup.R;
-import com.example.appitup.RecyclerAdapter;
-import com.example.appitup.admin.AdminSingleComplaintActivity;
-import com.example.appitup.classes.Data;
-import com.example.appitup.studentFragment.SingleComplaintDisplay;
+import com.mysocial.hackfest.R;
+import com.mysocial.hackfest.RecyclerAdapters.RecyclerAdapter;
+import com.mysocial.hackfest.admin.AdminSingleComplaintActivity;
+import com.mysocial.hackfest.classes.Data;
+import com.mysocial.hackfest.studentFragment.SingleComplaintDisplay;
 
 import java.util.List;
 

@@ -13,16 +13,16 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.appitup.R;
-import com.example.appitup.RecyclerAdapterClubUpdates;
-import com.example.appitup.RecyclerAdapterNotice;
-import com.example.appitup.SingleClubUpdateDisplay;
-import com.example.appitup.classes.Updates;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.mysocial.hackfest.R;
+import com.mysocial.hackfest.RecyclerAdapters.RecyclerAdapterClubUpdates;
+import com.mysocial.hackfest.RecyclerAdapters.RecyclerAdapterNotice;
+import com.mysocial.hackfest.SingleClubUpdateDisplay;
+import com.mysocial.hackfest.classes.Updates;
 
 import org.jetbrains.annotations.NotNull;
 

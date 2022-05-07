@@ -8,14 +8,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.appitup.MessManagerRecyclerAdapter;
-import com.example.appitup.R;
-import com.example.appitup.classes.MessScanCount;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.mysocial.hackfest.R;
+import com.mysocial.hackfest.RecyclerAdapters.MessManagerRecyclerAdapter;
+import com.mysocial.hackfest.classes.MessScanCount;
 
 import org.jetbrains.annotations.NotNull;
 

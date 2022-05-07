@@ -11,8 +11,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mysocial.hackfest.adapters.RecyclerAdapter;
+import com.mysocial.hackfest.R;
+import com.mysocial.hackfest.RecyclerAdapters.RecyclerAdapter;
+import com.mysocial.hackfest.admin.AdminSingleComplaintActivity;
 import com.mysocial.hackfest.classes.Data;
+import com.mysocial.hackfest.studentFragment.SingleComplaintDisplay;
 
 import java.util.List;
 

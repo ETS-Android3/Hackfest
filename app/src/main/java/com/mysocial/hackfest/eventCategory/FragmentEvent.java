@@ -12,15 +12,15 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.appitup.R;
-import com.example.appitup.ViewPagerEvent;
-import com.example.appitup.classes.Updates;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.mysocial.hackfest.R;
+import com.mysocial.hackfest.ViewPagerAdapters.ViewPagerEvent;
+import com.mysocial.hackfest.classes.Updates;
 
 import org.jetbrains.annotations.NotNull;
 
