@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/card_box"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/student_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/profiledp0103"
+            android:src="@drawable/profiledp01"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Saksham Dwivedi"
+            android:textColor="#112D4E"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/complaint_title"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="This is heading of complaint"
+            android:textSize="18sp"
+            android:textColor="#112D4E"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/status_box"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Status:"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#112D4E"/>
+                <ImageView
+                    android:id="@+id/complaint_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/unseen_"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/status_box"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/complaint_upvotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#112D4E"
+                    android:paddingRight="12dp"/>
+                <ImageView
+                    android:id="@+id/upvote_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/upvicon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="UPVOTES"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="2dp"
+                    android:textColor="#112D4E"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/tv_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/private_button01"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+</LinearLayout>

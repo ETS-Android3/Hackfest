@@ -23,9 +23,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.appitup.R;
-import com.example.appitup.classes.Data;
-import com.example.appitup.classes.StudentsInfo;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -37,6 +34,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.mysocial.hackfest.R;
+import com.mysocial.hackfest.classes.Data;
+import com.mysocial.hackfest.classes.StudentsInfo;
 
 import org.jetbrains.annotations.NotNull;
 

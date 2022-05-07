@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <item-->
+    <!--        android:id="@+id/edit_Profile"-->
+    <!--        android:title="Edit Profile Picture "-->
+    <!--        />-->
+    <item android:title="" />
+    <item
+        android:id="@+id/All"
+        android:title="All Complaints "
+        android:checked="true"/>
+    <item
+        android:id="@+id/Current"
+        android:title="Current " />
+    <item
+        android:id="@+id/Unseen"
+        android:title="Unseen " />
+    <item
+        android:id="@+id/Resolved"
+        android:title="Resolved " />
+    <item
+        android:id="@+id/club_updates"
+        android:title="Club Updates" />
+    <item
+        android:id="@+id/event_updates"
+        android:title="Event Updates" />
+    <item
+        android:id="@+id/colledge_noticeboard"
+        android:title="Official Notice Board" />
+    <item
+        android:id="@+id/colledge_maps"
+        android:title="College Maps" />
+    <item
+        android:id="@+id/mess_scanner"
+        android:title="Mess Records" />
+
+    <item android:title="" />
+    <item
+        android:id="@+id/ForgotPassword"
+        android:title="Change Password" />
+    <item
+        android:id="@+id/LogOut"
+        android:title="Log Out " />
+</menu>

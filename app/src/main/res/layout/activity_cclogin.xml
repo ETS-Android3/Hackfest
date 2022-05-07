@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CCLogin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/phototextinc"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter Token"
+        android:background="@drawable/emailid"
+        android:textColor="#112D4E"
+        android:textColorHint="#112D4E"
+        android:paddingHorizontal="15dp"
+        android:fontFamily="@font/montserrat"/>
+
+    <Button
+        android:id="@+id/enterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/enterbutton_light"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

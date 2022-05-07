@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title=""/>
+    <item
+        android:id="@+id/All_updates"
+        android:title="Club Updates " />
+    <item
+        android:id="@+id/AddUpdate"
+        android:title="Add Club Update " />
+    <item android:title="" />
+    <item
+        android:id="@+id/EventUpdates"
+        android:title="Event Notices" />
+    <item
+        android:id="@+id/Notice"
+        android:title="Official Notice Board" />
+    <item
+        android:id="@+id/Open_Maps"
+        android:title="College Maps" />
+    <item
+        android:title=""/>
+    <item
+        android:id="@+id/ForgotPassword"
+        android:title="Change Password" />
+    <item
+        android:id="@+id/LogOut"
+        android:title="Log Out " />
+</menu>
