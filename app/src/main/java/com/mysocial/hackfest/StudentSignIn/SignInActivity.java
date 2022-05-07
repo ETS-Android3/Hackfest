@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,8 +29,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class SignInActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView newAccount;
-    private Button btnlogin;
+    private TextView btnlogin , newAccount;
     private EditText emailEdtTxt, passwordEdtTxt;
     private FirebaseAuth mAuth;
     private ValueEventListener vel;
@@ -44,7 +42,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        btnlogin = (Button) findViewById(R.id.loginBtn);
+        btnlogin = findViewById(R.id.loginBtn);
         emailEdtTxt = (EditText) findViewById(R.id.mailIdSignIn);
         passwordEdtTxt = (EditText) findViewById(R.id.passwordSignIn);
         newAccount = (TextView) findViewById(R.id.gotosignup);
@@ -113,10 +111,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
                                     finish();
                                 }
                                 reff.removeEventListener(vel);
-
-
                                 progressDialog.cancel();
-
                                 btnlogin.setOnClickListener(SignInActivity.this::onClick);
                             }
 

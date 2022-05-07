@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class StudentsInfo implements Serializable {
     private String name;
     private String admNo;
-    private String profilePicUri = null;
+    private String profilePicUri = " ";
     private String email;
     private String hostel;
 
