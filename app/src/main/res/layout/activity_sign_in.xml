@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentSignIn.SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/studentsignupbbg">
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/profiledp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/studentsignup"/>
+    <EditText
+        android:id="@+id/mailIdSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/confirm_pass"
+        android:hint="College Email ID"
+        android:textColorHint="#112D4E"
+        android:textColor="#112D4E"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/passwordSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/confirm_pass"
+        android:hint="Password"
+        android:textColorHint="#112D4E"
+        android:textColor="#112D4E"
+        android:fontFamily="@font/montserrat"
+        android:paddingHorizontal="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/loginbutton"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEW HERE?"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/gotosignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE ACCOUNT"
+            android:layout_marginLeft="5dp"
+            android:textColorLink="#0000FF"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FF0000"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
