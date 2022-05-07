@@ -7,7 +7,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.appitup.AdminSignIn.AdminLogin;
+import com.mysocial.hackfest.AdminSignIn.AdminLogin;
 
 public class AdminSecondPage extends AppCompatActivity implements View.OnClickListener {
 

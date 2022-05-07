@@ -14,11 +14,11 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import com.example.appitup.eventCategory.FragmentEvent;
-import com.example.appitup.studentFragment.FragmentUpdates;
-import com.example.appitup.studentFragment.MessScannerDisplay;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.mysocial.hackfest.eventCategory.FragmentEvent;
+import com.mysocial.hackfest.studentFragment.FragmentUpdates;
+import com.mysocial.hackfest.studentFragment.MessScannerDisplay;
 
 public class MessManagerActivity extends AppCompatActivity {
     private DrawerLayout mDrawer;
@@ -101,7 +101,7 @@ public class MessManagerActivity extends AppCompatActivity {
         Class fragmentClass = null;
         switch(menuItem.getItemId()) {
             case R.id.UpdateMessRecords:
-                Intent i=new Intent(this, com.example.appitup.UpdateMessMenuActivity.class);
+                Intent i=new Intent(this,UpdateMessMenuActivity.class);
                 i.putExtra("Hostel",messName);
                 startActivity(i);
                 k=1;
@@ -112,7 +112,7 @@ public class MessManagerActivity extends AppCompatActivity {
                         .commit();
                 break;
             case R.id.CurrentMessRecords:
-                Intent l=new Intent(this, com.example.appitup.CurrentMessMenuActivity.class);
+                Intent l=new Intent(this, CurrentMessMenuActivity.class);
                 l.putExtra("Hostel",messName);
                 startActivity(l);
                 k=1;
@@ -137,18 +137,18 @@ public class MessManagerActivity extends AppCompatActivity {
                 SharedPreferences.Editor myEdit = sharedPreferences.edit();
                 myEdit.putInt("isLogged",0);
                 myEdit.commit();
-                Intent iu=new Intent(MessManagerActivity.this, com.example.appitup.FirstPage.class);
+                Intent iu=new Intent(MessManagerActivity.this, SplashScreenActivity.class);
                 startActivity(iu);
                 finish();
                 k=0;
                 break;
             case R.id.Open_Maps:// Piyush chutiya hai
-                Intent t=new Intent(this, com.example.appitup.MapActivity.class);
+                Intent t=new Intent(this, MapActivity.class);
                 startActivity(t);
                 k=1;
                 break;
             case R.id.UpdateFullMenu:
-                Intent qw=new Intent(this, com.example.appitup.MasterMenuUpdaterActivity.class);
+                Intent qw=new Intent(this, MasterMenuUpdaterActivity.class);
                 qw.putExtra("Mess",messName);
                 startActivity(qw);
                 k=1;
@@ -161,7 +161,7 @@ public class MessManagerActivity extends AppCompatActivity {
                 break;
             case R.id.ForgotPassword:
                 //Go for forgot password
-                Intent intent = new Intent(MessManagerActivity.this, com.example.appitup.ChangePasswordActivity.class);
+                Intent intent = new Intent(MessManagerActivity.this, ChangePasswordActivity.class);
                 intent.putExtra("User","mess");
                 startActivity(intent);
                 k=0;

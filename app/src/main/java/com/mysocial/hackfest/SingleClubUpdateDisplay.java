@@ -14,7 +14,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.example.appitup.classes.Updates;
+import com.mysocial.hackfest.classes.Updates;
 
 public class SingleClubUpdateDisplay extends AppCompatActivity {
 
@@ -147,7 +147,7 @@ public class SingleClubUpdateDisplay extends AppCompatActivity {
                     .setNegativeButton("View", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            Intent intent = new Intent(SingleClubUpdateDisplay.this, com.example.appitup.ViewpdfActivity.class);
+                            Intent intent = new Intent(SingleClubUpdateDisplay.this, ViewpdfActivity.class);
                             intent.putExtra("url", updates.getPdfUrl());
                             startActivity(intent);
                         }

@@ -86,7 +86,7 @@ public class ClubInfoActivity extends AppCompatActivity implements View.OnClickL
                 club = "Cricket Club";
                 break;
         }
-        Intent intent = new Intent(ClubInfoActivity.this, com.example.appitup.ViewClubInfoActivity.class);
+        Intent intent = new Intent(ClubInfoActivity.this, ViewClubInfoActivity.class);
         intent.putExtra("Club",club);
         startActivity(intent);
     }

@@ -23,6 +23,9 @@ dependencyResolutionManagement {
                 password = MAPBOX_DOWNLOADS_TOKEN
             }
         }
+        maven {
+            url 'https://jitpack.io/'
+        }
     }
 }
 rootProject.name = "Hackfest"

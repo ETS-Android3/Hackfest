@@ -15,11 +15,11 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import com.example.appitup.eventCategory.FragmentEvent;
-import com.example.appitup.studentFragment.FragmentUpdates;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.mysocial.hackfest.eventCategory.FragmentEvent;
+import com.mysocial.hackfest.studentFragment.FragmentUpdates;
 
 public class NoticeActivity extends AppCompatActivity {
     private DrawerLayout mDrawer;
@@ -114,7 +114,7 @@ public class NoticeActivity extends AppCompatActivity {
                         .commit();
                 break;
             case R.id.AddNotice:
-                Intent i = new Intent(this, com.example.appitup.AddNoticeActivity.class);
+                Intent i = new Intent(this,AddNoticeActivity.class);
                 startActivity(i);
                 k = 1;
                 break;
@@ -124,7 +124,7 @@ public class NoticeActivity extends AppCompatActivity {
                         .commit();
                 break;
             case R.id.MessRecords:
-                Intent intent = new Intent(this, com.example.appitup.MessLoginSelecterActivity.class);
+                Intent intent = new Intent(this,MessLoginSelecterActivity.class);
                 intent.putExtra("isLogin", 2);
                 startActivity(intent);
                 break;
@@ -134,20 +134,20 @@ public class NoticeActivity extends AppCompatActivity {
                 SharedPreferences.Editor myEdit = sharedPreferences.edit();
                 myEdit.putInt("isLogged", 0);
                 myEdit.commit();
-                Intent igh = new Intent(NoticeActivity.this, com.example.appitup.FirstPage.class);
+                Intent igh = new Intent(NoticeActivity.this, SplashScreenActivity.class);
                 startActivity(igh);
                 finish();
                 // Logout here
                 k = 0;
                 break;
             case R.id.Open_Maps:
-                Intent t = new Intent(this, com.example.appitup.MapActivity.class);
+                Intent t = new Intent(this, MapActivity.class);
                 startActivity(t);
                 k = 1;
                 break;
             case R.id.ForgotPassword:
                 //Go for forgot password
-                Intent intent1 = new Intent(NoticeActivity.this, com.example.appitup.ChangePasswordActivity.class);
+                Intent intent1 = new Intent(NoticeActivity.this, ChangePasswordActivity.class);
                 intent1.putExtra("User", "notice");
                 startActivity(intent1);
                 k = 0;

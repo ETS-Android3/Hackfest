@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.appitup.studentFragment.MessScannerDisplay;
+import com.mysocial.hackfest.studentFragment.MessScannerDisplay;
 
 public class MessLoginSelecterActivity extends AppCompatActivity implements View.OnClickListener {
     private String mess;

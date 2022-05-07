@@ -24,19 +24,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/studentsignup"/>
-    <EditText
-        android:id="@+id/mailIdSignIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/confirm_pass"
-        android:hint="College Email ID"
-        android:textColorHint="#112D4E"
-        android:textColor="#112D4E"
-        android:fontFamily="@font/montserrat"
-        android:paddingHorizontal="15dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/mailIdSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:background="@drawable/confirm_pass"
+            android:hint="College Email ID"
+            android:paddingHorizontal="15dp"
+            android:textColor="#112D4E"
+            android:textColorHint="#112D4E"
+            android:textSize="20sp" />
 
     <EditText
         android:id="@+id/passwordSignIn"

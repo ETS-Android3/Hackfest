@@ -17,10 +17,10 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import com.example.appitup.studentFragment.FragmentUpdates;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.mysocial.hackfest.studentFragment.FragmentUpdates;
 
 import org.apache.commons.net.ntp.NTPUDPClient;
 import org.apache.commons.net.ntp.TimeInfo;
@@ -248,12 +248,12 @@ public class UpdateAdministratorActivity extends AppCompatActivity {
                         .commit();
                 break;
             case R.id.Open_Maps:
-                Intent t=new Intent(this, com.example.appitup.MapActivity.class);
+                Intent t=new Intent(this, MapActivity.class);
                 startActivity(t);
                 k=1;
                 break;
             case R.id.AddUpdate:
-                Intent i=new Intent(this, com.example.appitup.AddUpdateActivity.class);
+                Intent i=new Intent(this, AddUpdateActivity.class);
                 i.putExtra("ClubName",ClubName);
                 startActivity(i);
                 k=1;
@@ -267,13 +267,13 @@ public class UpdateAdministratorActivity extends AppCompatActivity {
                 SharedPreferences.Editor myEd = sharedPreferences.edit();
                 myEd.putString("isClub","");
                 myEd.commit();
-                Intent iuyt=new Intent(UpdateAdministratorActivity.this, com.example.appitup.FirstPage.class);
+                Intent iuyt=new Intent(UpdateAdministratorActivity.this, SplashScreenActivity.class);
                 startActivity(iuyt);
                 finish();
                 break;
             case R.id.ForgotPassword:
                 //Go for forgot password
-                Intent intent = new Intent(UpdateAdministratorActivity.this, com.example.appitup.ChangePasswordActivity.class);
+                Intent intent = new Intent(UpdateAdministratorActivity.this, ChangePasswordActivity.class);
                 intent.putExtra("User",club);
                 startActivity(intent);
                 k=0;

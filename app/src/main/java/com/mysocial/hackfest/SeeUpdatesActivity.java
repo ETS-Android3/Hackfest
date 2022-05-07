@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.bumptech.glide.Glide;
-import com.example.appitup.classes.Updates;
+import com.mysocial.hackfest.classes.Updates;
 
 public class SeeUpdatesActivity extends AppCompatActivity {
 

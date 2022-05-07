@@ -14,6 +14,154 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Hackfest"></application>
+        android:theme="@style/Theme.Hackfest">
+
+        <activity
+            android:name=".library.LibraryCountDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".faceofcampus.TakeImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lostNFound.AddLostObjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lostNFound.LostNFoundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HealthManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HealthUpdaterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HealthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MessLoginSelecterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClubInfoPusherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewClubInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClubInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SingleEventUpdateDisplay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminSecondPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OuterEventUpdatesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MasterMenuUpdaterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".GoToActivity" />
+        <activity
+            android:name=".ViewpdfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CCLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClubsList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateMessMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CurrentMessMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MessManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NoticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UpdateAdministratorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SeeUpdatesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SingleClubUpdateDisplay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddNoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AdminSignIn.AdminLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.AdminSingleComplaintActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.SENDTO"
+                    android:screenOrientation="portrait" />
+
+                <data android:scheme="mailto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImageViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".studentFragment.SingleComplaintDisplay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".studentFragment.StudentMainActvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin.AdminMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StudentSignIn.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".studentFragment.QRCodeScanner" />
+        <activity
+            android:name=".StudentSignIn.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".studentFragment.MessScannerDisplay" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
 
 </manifest>
