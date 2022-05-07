@@ -1,96 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/primary_gradient"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
     tools:context=".StudentSignIn.SignInActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/studentsignupbbg">
+        android:paddingHorizontal="30dp">
 
-        <ImageView
-            android:id="@+id/profilePic"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/profiledp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="100dp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/studentsignup"/>
+            android:fontFamily="@font/modern_antiqua"
+            android:paddingTop="5dp"
+            android:text="Welcome"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
-        <EditText
-            android:id="@+id/mailIdSignIn"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/montserrat"
-            android:background="@drawable/confirm_pass"
-            android:hint="College Email ID"
-            android:paddingHorizontal="15dp"
-            android:textColor="#112D4E"
-            android:textColorHint="#112D4E"
-            android:textSize="20sp" />
+            android:fontFamily="@font/modern_antiqua"
+            android:paddingTop="5dp"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textSize="33sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/passwordSignIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/confirm_pass"
-        android:hint="Password"
-        android:textColorHint="#112D4E"
-        android:textColor="#112D4E"
-        android:fontFamily="@font/montserrat"
-        android:paddingHorizontal="15dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:textSize="20sp"
-        android:inputType="textPassword"/>
+    </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/loginBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@drawable/loginbutton"
-        android:layout_marginTop="25dp"/>
-
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="5dp">
+        android:layout_height="600dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#E8F0F2"
+        app:cardCornerRadius="30dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="NEW HERE?"
-            android:textColor="@color/text_color_primary"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center_horizontal"
-            android:textSize="15sp"/>
+            android:orientation="vertical"
+            android:padding="30dp">
 
-        <TextView
-            android:id="@+id/gotosignup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CREATE ACCOUNT"
-            android:layout_marginLeft="5dp"
-            android:textColorLink="#0000FF"
-            android:layout_gravity="center_horizontal"
-            android:textColor="#FF0000"
-            android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/modern_antiqua"
+                android:text="College Email Id"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/mailIdSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/modern_antiqua"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/modern_antiqua"
+                android:text="Password"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
-</RelativeLayout>
+            <EditText
+                android:id="@+id/passwordSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/modern_antiqua"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/loginBtn"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/sign_in_button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_marginTop="210dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/modern_antiqua"
+                    android:text="Already Have A account ?"
+                    android:layout_marginHorizontal="10dp"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:layout_weight="0.7"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gotosignup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/modern_antiqua"
+                    android:text="Sign Up"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="0.3"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
