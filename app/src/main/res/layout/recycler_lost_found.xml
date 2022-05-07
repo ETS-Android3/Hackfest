@@ -42,7 +42,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/montserrat"
+                        android:fontFamily="@font/modern_antiqua"
                         android:gravity="center_horizontal"
                         android:text="Earphone"
                         android:textColor="@color/black"
@@ -55,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/montserrat"
+                        android:fontFamily="@font/modern_antiqua"
                         android:gravity="center_horizontal"
                         android:text="Earphone"
                         android:textColor="@color/black"
@@ -85,8 +85,8 @@
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/montserrat"
-                    android:text="Claimed By :-"
                     android:textSize="16sp"
+                    android:text="Claimed By :-"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/modern_antiqua"
                     android:text="Earphone"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
@@ -107,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/modern_antiqua"
                     android:text="Earphone"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/montserrat"
+                    android:fontFamily="@font/modern_antiqua"
                     android:text="Earphone"
                     android:textColor="@color/black"
                     android:textStyle="bold" />

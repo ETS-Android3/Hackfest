@@ -58,12 +58,10 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".ViewClubInfoActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ClubInfoActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SingleEventUpdateDisplay"
             android:screenOrientation="portrait"
@@ -175,8 +173,7 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".studentFragment.StudentMainActvity"
-            android:screenOrientation="fullSensor"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".admin.AdminMainActivity"
             android:screenOrientation="fullSensor"

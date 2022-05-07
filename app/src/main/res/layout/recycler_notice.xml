@@ -25,7 +25,6 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:fontFamily="@font/montserrat"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal"
                 android:text="notification or warning of something, especially to allow preparations to be made"
