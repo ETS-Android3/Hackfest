@@ -14,7 +14,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.example.appitup.classes.Updates;
+import com.mysocial.hackfest.classes.Updates;
 
 public class SingleEventUpdateDisplay extends AppCompatActivity {
 

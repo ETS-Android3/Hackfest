@@ -114,10 +114,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 intent = new Intent(LoginActivity.this,NoticeActivity.class);
                                 break;
                             case "event":
-                                intent = new Intent(LoginActivity.this, com.example.appitup.OuterEventUpdatesActivity.class);
+                                intent = new Intent(LoginActivity.this, OuterEventUpdatesActivity.class);
                                 break;
                             case "health":
-                                intent = new Intent(LoginActivity.this, com.example.appitup.HealthManagerActivity.class);
+                                intent = new Intent(LoginActivity.this, HealthManagerActivity.class);
                                 break;
                             default:
                                 intent = new Intent(LoginActivity.this,LoginActivity.class);

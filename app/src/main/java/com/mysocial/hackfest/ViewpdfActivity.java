@@ -7,8 +7,6 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.github.barteksc.pdfviewer.PDFView;
-
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;

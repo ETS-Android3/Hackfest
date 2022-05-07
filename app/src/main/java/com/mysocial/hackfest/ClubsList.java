@@ -34,7 +34,7 @@ public class ClubsList extends AppCompatActivity implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(ClubsList.this, com.example.appitup.CCLogin.class);
+        Intent intent = new Intent(ClubsList.this, CCLogin.class);
         String club="";
         switch (v.getId()){
             case R.id.lci:

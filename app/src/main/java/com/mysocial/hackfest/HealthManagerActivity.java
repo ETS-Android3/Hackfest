@@ -15,11 +15,11 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import com.example.appitup.eventCategory.FragmentEvent;
-import com.example.appitup.studentFragment.FragmentUpdates;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.mysocial.hackfest.eventCategory.FragmentEvent;
+import com.mysocial.hackfest.studentFragment.FragmentUpdates;
 
 public class HealthManagerActivity extends AppCompatActivity {
     private DrawerLayout mDrawer;
@@ -130,7 +130,7 @@ public class HealthManagerActivity extends AppCompatActivity {
                 SharedPreferences.Editor myEdit = sharedPreferences.edit();
                 myEdit.putInt("isLogged",0);
                 myEdit.commit();
-                Intent igh=new Intent(HealthManagerActivity.this,FirstPage.class);
+                Intent igh=new Intent(HealthManagerActivity.this,SplashScreenActivity.class);
                 startActivity(igh);
                 finish();
                 // Logout here

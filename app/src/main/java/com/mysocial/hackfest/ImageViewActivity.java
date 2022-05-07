@@ -7,8 +7,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-
-import uk.co.senab.photoview.PhotoViewAttacher;
+import com.github.chrisbanes.photoview.PhotoViewAttacher;
 
 public class ImageViewActivity extends AppCompatActivity {
     String url="";

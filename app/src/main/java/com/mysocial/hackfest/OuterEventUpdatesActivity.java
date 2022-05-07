@@ -12,11 +12,11 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import com.example.appitup.eventCategory.FragmentEvent;
-import com.example.appitup.studentFragment.FragmentUpdates;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.mysocial.hackfest.eventCategory.FragmentEvent;
+import com.mysocial.hackfest.studentFragment.FragmentUpdates;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -124,7 +124,7 @@ public class OuterEventUpdatesActivity extends AppCompatActivity {
                 k=1;
                 break;
             case R.id.AddUpdate:
-                Intent i=new Intent(this, com.example.appitup.AddNoticeActivity.class);
+                Intent i=new Intent(this, AddNoticeActivity.class);
                 startActivity(i);
                 k=1;
                 break;
@@ -133,7 +133,7 @@ public class OuterEventUpdatesActivity extends AppCompatActivity {
                 SharedPreferences.Editor myEdit = sharedPreferences.edit();
                 myEdit.putInt("isLogged",0);
                 myEdit.commit();
-                Intent igh=new Intent(OuterEventUpdatesActivity.this,FirstPage.class);
+                Intent igh=new Intent(OuterEventUpdatesActivity.this,SplashScreenActivity.class);
                 startActivity(igh);
                 finish();
                 k=0;

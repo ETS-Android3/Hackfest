@@ -21,20 +21,6 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.bumptech.glide.Glide;
-import com.example.appitup.ClubInfoActivity;
-import com.example.appitup.CurrentMessMenuActivity;
-import com.example.appitup.EditProfileActivity;
-import com.example.appitup.FirstPage;
-import com.example.appitup.HealthActivity;
-import com.example.appitup.ImageViewActivity;
-import com.example.appitup.MapActivity;
-import com.example.appitup.R;
-import com.example.appitup.ViewpdfActivity;
-import com.example.appitup.classes.StudentsInfo;
-import com.example.appitup.eventCategory.FragmentEvent;
-import com.example.appitup.faceofcampus.TakeImageActivity;
-import com.example.appitup.library.LibraryCountDisplay;
-import com.example.appitup.lostNFound.LostNFoundActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
@@ -45,6 +31,20 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.mysocial.hackfest.ClubInfoActivity;
+import com.mysocial.hackfest.CurrentMessMenuActivity;
+import com.mysocial.hackfest.EditProfileActivity;
+import com.mysocial.hackfest.HealthActivity;
+import com.mysocial.hackfest.ImageViewActivity;
+import com.mysocial.hackfest.MapActivity;
+import com.mysocial.hackfest.R;
+import com.mysocial.hackfest.SplashScreenActivity;
+import com.mysocial.hackfest.ViewpdfActivity;
+import com.mysocial.hackfest.classes.StudentsInfo;
+import com.mysocial.hackfest.eventCategory.FragmentEvent;
+import com.mysocial.hackfest.faceofcampus.TakeImageActivity;
+import com.mysocial.hackfest.library.LibraryCountDisplay;
+import com.mysocial.hackfest.lostNFound.LostNFoundActivity;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -237,7 +237,7 @@ public class StudentMainActvity extends AppCompatActivity {
                         SharedPreferences.Editor myEdit = sharedPreferences.edit();
                         myEdit.putInt("isLogged",0);
                         myEdit.commit();
-                        Intent i = new Intent(StudentMainActvity.this, FirstPage.class);
+                        Intent i = new Intent(StudentMainActvity.this, SplashScreenActivity.class);
                         startActivity(i);
                         finish();
 

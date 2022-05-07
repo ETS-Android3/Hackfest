@@ -1,4 +1,5 @@
 package com.mysocial.hackfest;
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
@@ -11,8 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.appitup.classes.StudentsInfo;
-import com.example.appitup.studentFragment.StudentMainActvity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,6 +23,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.mysocial.hackfest.classes.StudentsInfo;
+import com.mysocial.hackfest.studentFragment.StudentMainActvity;
 
 import org.jetbrains.annotations.NotNull;
 
