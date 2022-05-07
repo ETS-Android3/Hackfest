@@ -8,10 +8,12 @@ android {
 
     defaultConfig {
         applicationId "com.mysocial.hackfest"
-        minSdk 21
+        minSdk 24
         targetSdk 32
         versionCode 1
+        multiDexEnabled true
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -86,4 +88,7 @@ dependencies {
 
     //pdf viewer
     implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    //multidex
+    implementation 'androidx.multidex:multidex:2.0.1'
 }
