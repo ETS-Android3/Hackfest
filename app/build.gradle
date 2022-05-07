@@ -68,7 +68,8 @@ dependencies {
     implementation 'com.android.volley:volley:1.2.0'
 
     //qr code scanner
-    implementation 'com.journeyapps:zxing-android-embedded:4.0.2'
+    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
+    implementation 'commons-net:commons-net:3.6'
 
     //pdf viewer
     implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
