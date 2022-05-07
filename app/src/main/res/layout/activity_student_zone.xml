@@ -51,6 +51,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:theme="@style/Theme.AppCompat.DayNight"
+        app:itemTextAppearance="@color/black"
         app:headerLayout="@layout/student_zone_navigation_header"
         app:itemIconTint="@color/white"
         app:menu="@menu/student_zone_menu" />

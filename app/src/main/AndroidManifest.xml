@@ -55,10 +55,12 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ViewClubInfoActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".ClubInfoActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".SingleEventUpdateDisplay"
             android:screenOrientation="portrait"

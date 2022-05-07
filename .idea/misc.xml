@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/drawable/gradient_background.xml" value="0.181" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable-mdpi/ic_launcher_background.xml" value="0.124" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable/gradient_background.xml" value="0.2055" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable/ic_icon_feather_st.xml" value="0.2055" />
@@ -25,16 +26,64 @@
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_add_update.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_admin_login.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_admin_main.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_admin_second_page.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_admin_single_complaint.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_cclogin.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_change_password.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_qrcode_scanner.xml" value="0.18425925925925926" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_see_updates.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_single_club_update_display.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_single_complaint_display.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_single_event_update_display.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_student_zone.xml" value="0.18425925925925926" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_take_image.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_update_administrator.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_update_mess_menu.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_view_club_info.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_viewpdf.xml" value="0.19722222222222222" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/content_admin_main.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/custom_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fargment_administrative.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fargment_hostel.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fhh.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/first_page.xml" value="0.11145833333333334" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fragment_academic.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fragment_add_a_complaint.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fragment_admin_all_complaints.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fragment_all_notice.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fragment_club_updates.xml" value="0.18425925925925926" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fragment_event.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fragment_event_updates.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fragment_mess.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fragment_my_complaints.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/fragment_public_time_line.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/heatlhmanagertoolbar.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/mess_manager_toolbar.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/nav_header.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/notice_managet_toolbar.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/recycler_admin.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/recycler_club_updates.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/recycler_lost_found.xml" value="0.4" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/recycler_notice.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/recycler_view_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/recycler_view_mess_manager.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/student_zone_navigation_header.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/toolbar.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/trial.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/turndown_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/update_manager_toolbar.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/update_nav_header.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_sign_up.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/first_page.xml" value="0.11145833333333334" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/menu/nav_menu.xml" value="0.25" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/menu/student_zone_menu.xml" value="0.24615384615384617" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16_PREVIEW" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

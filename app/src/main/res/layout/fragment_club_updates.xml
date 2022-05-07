@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".studentFragment.FragmentUpdates"
     android:paddingHorizontal="0dp"
+    android:background="@color/white"
     android:paddingVertical="20dp">
 
     <androidx.recyclerview.widget.RecyclerView

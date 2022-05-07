@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".SingleClubUpdateDisplay">
     <androidx.appcompat.widget.Toolbar
@@ -89,6 +90,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
+                        app:cardBackgroundColor="@color/white"
                         app:cardCornerRadius="20dp">
 
                         <LinearLayout
@@ -148,6 +150,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        app:cardBackgroundColor="@color/white"
                         android:layout_marginTop="30dp"
                         app:cardCornerRadius="20dp">
 
@@ -171,6 +174,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        app:cardBackgroundColor="@color/white"
                         android:layout_marginTop="30dp"
                         app:cardCornerRadius="20dp">
 
@@ -226,6 +230,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        app:cardBackgroundColor="@color/white"
                         android:layout_marginTop="30dp"
                         app:cardCornerRadius="20dp">
 
