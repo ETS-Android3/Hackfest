@@ -1,9 +1,7 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
-
-apply plugin: 'com.google.gms.google-services'
-apply plugin: 'com.android.application'
 
 android {
     compileSdk 32
@@ -31,6 +29,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+        dataBinding true
     }
 
 }
@@ -51,4 +50,13 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:24.0.1'
     implementation platform('com.google.firebase:firebase-bom:27.1.0')
     implementation 'com.google.firebase:firebase-analytics'
+
+    //mapbox
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.1'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.42.6'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-markerview-v9:0.4.0'
+
+    // Chart and graph library
+    implementation 'com.github.blackfizz:eazegraph:1.2.5l@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
 }
