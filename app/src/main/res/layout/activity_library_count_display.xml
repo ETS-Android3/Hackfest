@@ -74,6 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:background="@color/colorPrimary"
                 android:weightSum="2">
 
                 <org.eazegraph.lib.charts.PieChart
@@ -91,6 +92,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
+
                     android:gravity="center_vertical"
                     android:orientation="vertical">
 
@@ -102,12 +104,13 @@
                         <View
                             android:layout_width="15dp"
                             android:layout_height="match_parent"
-                            android:background="#0016DB" />
+                            android:background="#FFEB3B" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
+                            android:textColor="@color/white"
                             android:text="Occupied" />
 
                     </LinearLayout>
@@ -130,6 +133,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
+                            android:textColor="@color/white"
                             android:text="Vacant" />
 
                     </LinearLayout>
@@ -144,6 +148,7 @@
             android:id="@+id/details"
             android:layout_width="match_parent"
             android:layout_height="160dp"
+            app:cardBackgroundColor="@color/colorPrimary"
             android:layout_below="@+id/cardViewGraph"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
@@ -155,6 +160,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
                 android:orientation="vertical">
 
                 <TextView
@@ -162,6 +168,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
                     android:text="Library Capacity"
                     android:textSize="23sp"
                     android:textStyle="bold" />
@@ -172,7 +179,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="20dp"
-                    android:background="@color/color_two" />
+                    android:background="@color/white" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -187,6 +194,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
                         android:text="Occupied"
+                        android:textColor="@color/white"
                         android:textSize="18sp" />
 
                     <TextView
@@ -197,7 +205,7 @@
                         android:fontFamily="sans-serif-light"
                         android:text="0"
                         android:textAlignment="textEnd"
-                        android:textColor="@color/color_one"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -208,7 +216,7 @@
                     android:layout_height="1dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:background="@color/color_two" />
+                    android:background="@color/white" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -223,6 +231,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
                         android:text="Vacant"
+                        android:textColor="@color/white"
                         android:textSize="18sp" />
 
                     <TextView
@@ -233,7 +242,7 @@
                         android:fontFamily="sans-serif-light"
                         android:text="0"
                         android:textAlignment="textEnd"
-                        android:textColor="@color/color_one"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 

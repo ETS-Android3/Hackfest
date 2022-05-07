@@ -82,6 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/modern_antiqua"
+                android:inputType="textPassword"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18dp" />
 

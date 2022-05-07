@@ -87,7 +87,7 @@ public class LibraryCountDisplay extends AppCompatActivity {
                 new PieModel(
                         "Occupied",
                         Integer.parseInt(binding.occupiedCount.getText().toString()),
-                        Color.parseColor("#0016DB")));
+                        Color.parseColor("#FFEB3B")));
         binding.piechart.addPieSlice(
                 new PieModel(
                         "Vacant",
