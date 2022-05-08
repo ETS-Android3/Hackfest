@@ -77,16 +77,18 @@
                 android:title="Current Doctor Schedule" />
 
             <item
-                android:id="@+id/lost_n_found"
-                android:title="Lost And Found" />
-
-            <item
                 android:id="@+id/college_faces"
                 android:title="Faces of College" />
 
             <item
                 android:id="@+id/library_capacity"
                 android:title="Library Capacity" />
+
+            <item
+                android:id="@+id/lost_n_found"
+                android:title="Lost And Found" />
+
+
         </menu>
     </item>
 

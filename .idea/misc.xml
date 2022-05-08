@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/drawable/gradient_background.xml" value="0.181" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable-mdpi/ic_launcher_background.xml" value="0.124" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable/gradient_background.xml" value="0.2055" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable/ic_icon_feather_st.xml" value="0.2055" />
@@ -12,13 +11,20 @@
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/drawable/primary_gradient.xml" value="0.2055" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/font/montserrat.xml" value="0.284375" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/activity_add_new_data_activtiy.xml" value="0.264" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/activity_add_notice.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/activity_notice.xml" value="0.25416666666666665" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/activity_sign_in.xml" value="0.25416666666666665" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/activity_take_image.xml" value="0.25416666666666665" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/complaint_card.xml" value="0.264" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/content_admin_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/fhh.xml" value="0.11302083333333333" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/nav_header.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/notice_managet_toolbar.xml" value="0.25416666666666665" />
         <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/layout/recycler_view_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/menu/notive_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Dev/HackFesst/Hackfest/app/src/main/res/menu/student_zone_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/drawable/gradient_background.xml" value="0.181" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/font/montserrat.xml" value="0.23981481481481481" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_add_lost_object.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_add_new_data_activtiy.xml" value="0.25" />
@@ -33,7 +39,7 @@
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_qrcode_scanner.xml" value="0.18425925925925926" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_see_updates.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
-        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
+        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_sign_up.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_single_club_update_display.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_single_complaint_display.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_single_event_update_display.xml" value="0.25" />
@@ -76,8 +82,6 @@
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/turndown_layout.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/update_manager_toolbar.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/update_nav_header.xml" value="0.25" />
-        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/activity_sign_up.xml" value="0.10989583333333333" />
-        <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/layout/first_page.xml" value="0.11145833333333334" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/menu/nav_menu.xml" value="0.25" />
         <entry key="..\:/Users/Ansh/Desktop/New folder/Hackfest/app/src/main/res/menu/student_zone_menu.xml" value="0.24615384615384617" />
       </map>

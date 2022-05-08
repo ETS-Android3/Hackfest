@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="135dp"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat"
         android:text="Someone@gmail.com"
+        android:textColor="@color/text_color_primary"
         android:textSize="14sp" />
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
