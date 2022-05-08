@@ -43,19 +43,24 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".HealthManagerActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".HealthUpdaterActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".HealthActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".MessLoginSelecterActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".ClubInfoPusherActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".ViewClubInfoActivity"
             android:screenOrientation="portrait"
@@ -180,17 +185,21 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".StudentSignIn.SignUpActivity"
-            android:screenOrientation="fullSensor" />
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".studentFragment.QRCodeScanner"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".StudentSignIn.SignInActivity"
-            android:screenOrientation="fullSensor" />
-        <activity android:name=".studentFragment.MessScannerDisplay" />
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".studentFragment.MessScannerDisplay"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"
-            android:screenOrientation="fullSensor">
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
