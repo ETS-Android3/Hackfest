@@ -91,6 +91,9 @@ The detailed of every feature can be viewed from the following link:
 * Python 
 * Esp32 library
 
+# 
+[Repo link for ML model](https://github.com/augsaksham/Hackfest_ML)
+
         
 ## API Documentation
 
