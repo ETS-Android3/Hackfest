@@ -42,12 +42,16 @@ public class LostAdapter extends RecyclerView.Adapter<LostAdapter.LostViewHolder
         holder.title.setText(list.get(position).getTitle());
         holder.message.setText(list.get(position).getMessage());
 
-        if ( !list.get(position).getImgUrl().equalsIgnoreCase("") )
+        if ( !list.get(position).getImgUrl().equalsIgnoreCase("image") )
         {
             Glide.with(holder.imageView)
                     .asBitmap()
                     .load(list.get(position).getImgUrl())
                     .into(holder.imageView);
+        }
+        else
+        {
+            holder.imageView.setImageResource(R.drawable.sample_pic);
         }
 
         holder.claim.setOnClickListener(new View.OnClickListener() {

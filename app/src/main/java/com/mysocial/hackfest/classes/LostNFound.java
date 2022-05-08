@@ -10,7 +10,7 @@ public class LostNFound implements Serializable {
     private String name ;
     private String title ;
     private String message ;
-    private String imgUrl ;
+    private String imgUrl = "image" ;
     private String status ;
     private String claimedName ;
     private String claimedAdmiNo ;
