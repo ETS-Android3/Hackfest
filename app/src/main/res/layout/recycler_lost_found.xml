@@ -42,7 +42,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/modern_antiqua"
+                        android:fontFamily="@font/montserrat"
                         android:gravity="center_horizontal"
                         android:text="Earphone"
                         android:textColor="@color/black"
@@ -55,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/modern_antiqua"
+                        android:fontFamily="@font/montserrat"
                         android:gravity="center_horizontal"
                         android:text="Earphone"
                         android:textColor="@color/black"
@@ -65,12 +65,25 @@
 
             </LinearLayout>
 
-            <ImageView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/claim"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:src="@drawable/private_button01" />
+                app:cardCornerRadius="30dp"
+                android:layout_marginLeft="15dp"
+                app:cardBackgroundColor="@color/color_one">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="16sp"
+                    android:text="Claim"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
 
             <LinearLayout
                 android:id="@+id/claimed_details"

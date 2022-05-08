@@ -129,6 +129,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/montserrat"
                                 android:layout_margin="10dp"
+                                android:textColor="@color/black"
                                 android:background="@drawable/rounded_text"
                                 android:textSize="20sp" />
 
@@ -163,6 +164,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="15dp"
+                                    android:textColor="@color/black"
                                     android:background="@drawable/rounded_text"
                                     android:fontFamily="@font/montserrat"
                                     android:padding="1dp" />
@@ -201,6 +203,7 @@
                                 android:fontFamily="@font/montserrat"
                                 android:text="DETAILS :"
                                 android:textColor="@color/black"
+
                                 android:textSize="17sp" />
 
                             <TextView
@@ -209,6 +212,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
                                 android:textAllCaps="true"
+                                android:textColor="@color/black"
                                 android:layout_marginLeft="20dp"
                                 android:fontFamily="@font/montserrat"
                                 android:text="Status :Turned Down "
@@ -221,6 +225,7 @@
                                 android:textAllCaps="true"
                                 android:layout_marginTop="6dp"
                                 android:layout_marginLeft="20dp"
+                                android:textColor="@color/black"
                                 android:fontFamily="@font/montserrat"
                                 android:text="Private "
                                 android:textSize="14sp" />
@@ -237,6 +242,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="25dp"
                                     android:textAllCaps="true"
+                                    android:textColor="@color/black"
                                     android:layout_marginLeft="20dp"
                                     android:fontFamily="@font/montserrat"
                                     android:text="Upvotes : 0"
@@ -278,6 +284,7 @@
                                 android:layout_width="340dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
+                                android:textColor="@color/black"
                                 android:background="@drawable/processed_button"
                                 android:onClick="btn_Processed" />
 
@@ -286,6 +293,7 @@
                                 android:layout_width="340dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
+                                android:textColor="@color/black"
                                 android:background="@drawable/trundown_buttonfour"
                                 android:onClick="turnDown" />
 
@@ -309,7 +317,6 @@
                                 android:layout_width="333dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-
                                 android:gravity="center"
                                 android:background="#2B4E78"
                                 android:layout_marginTop="10dp"
@@ -330,11 +337,11 @@
                                 android:layout_marginLeft="200dp"
                                 android:id="@+id/set_comment"
                                 android:onClick="SetComment"
+                                android:textColor="@color/black"
                                 android:layout_width="wrap_content"
                                 android:fontFamily="@font/montserrat"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="end"
-                                android:textColor="@color/colorPrimary"
                                 android:background="@drawable/setcmnt"/>
 
                         </LinearLayout>
