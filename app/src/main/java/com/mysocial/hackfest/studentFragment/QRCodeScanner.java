@@ -371,7 +371,7 @@ public class QRCodeScanner extends AppCompatActivity {
     }
 
     public void getTime() {
-        String url = "http://worldtimeapi.org/api/timezone/Asia/Kolkata";
+        String url = "https://worldtimeapi.org/api/timezone/Asia/Kolkata";
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override

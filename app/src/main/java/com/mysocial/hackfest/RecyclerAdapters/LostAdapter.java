@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -78,7 +79,8 @@ public class LostAdapter extends RecyclerView.Adapter<LostAdapter.LostViewHolder
     public class LostViewHolder extends RecyclerView.ViewHolder {
 
         private TextView title , message , claimedName , claimedAdmNo , claimedEmail;
-        private ImageView imageView , claim ;
+        private ImageView imageView ;
+        private CardView claim ;
         private LinearLayout linearLayout ;
 
         public LostViewHolder(@NonNull View itemView) {
