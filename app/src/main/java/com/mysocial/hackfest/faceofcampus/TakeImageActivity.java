@@ -46,6 +46,9 @@ public class TakeImageActivity extends AppCompatActivity {
     private ActivityTakeImageBinding binding;
     private String URL = "https://facereco23.herokuapp.com/predict";
 
+    Bitmap image;
+    String name, place, branch, year, foInterest;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,16 +79,24 @@ public class TakeImageActivity extends AppCompatActivity {
         binding.reportIssue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(TakeImageActivity.this, AddNewDataActivity.class);
+                intent.putExtra("image", image);
+                intent.putExtra("name",name);
+                intent.putExtra("branch", branch);
+                intent.putExtra("place", place);
+                intent.putExtra("year",year);
+                intent.putExtra("foInterest",foInterest);
+                intent.putExtra("update",1);
+                startActivity(intent);
             }
         });
 
         binding.uploadNewData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Bitmap bitmapImage = binding.imageView.getDrawingCache();
+
                 Intent intent = new Intent(TakeImageActivity.this, AddNewDataActivity.class);
-                intent.putExtra("image", bitmapImage);
+                intent.putExtra("image", image);
                 intent.putExtra("update",0);
                 startActivity(intent);
 
@@ -195,6 +206,7 @@ public class TakeImageActivity extends AppCompatActivity {
                 case 0:
                     if (resultCode == RESULT_OK && data != null) {
                         Bitmap selectedImage = (Bitmap) data.getExtras().get("data");
+                        image = selectedImage;
                         api_call(selectedImage);
                         binding.imageView.setImageBitmap(selectedImage);
 
@@ -209,6 +221,7 @@ public class TakeImageActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
                         Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
+                        image = selectedImage;
                         api_call(selectedImage);
                         binding.imageView.setImageBitmap(selectedImage);
 
@@ -240,12 +253,12 @@ public class TakeImageActivity extends AppCompatActivity {
                 try {
                     dialog.dismiss();
                     JSONObject jsonObject = new JSONObject(response);
-                    String name = jsonObject.getString("name");
-                    String place = jsonObject.getString("place");
-                    String branch = jsonObject.getString("branch");
-                    String studying = jsonObject.getString("studying");
-                    String image = jsonObject.getString("image");
-                    String year = jsonObject.getString("year");
+                    name = jsonObject.getString("name");
+                    place = jsonObject.getString("place");
+                    branch = jsonObject.getString("branch");
+                    foInterest = jsonObject.getString("studying");
+                    String storedImage = jsonObject.getString("image");
+                    year = jsonObject.getString("year");
 
                     String txt = year;
                     if(year.equals("1"))txt+="'st year";
@@ -258,6 +271,7 @@ public class TakeImageActivity extends AppCompatActivity {
                     binding.nameFetched.setText(name);
                     binding.placeFetched.setText(place);
                     binding.branchYearFetched.setText(branch+"\n("+txt+")");
+                    binding.fieldOfInterestFetched.setText(foInterest);
 
                     binding.dataPalate.setVisibility(View.VISIBLE);
                     binding.notFoundPalate.setVisibility(View.INVISIBLE);

@@ -1,10 +1,12 @@
 package com.mysocial.hackfest.faceofcampus;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,6 +33,7 @@ public class AddNewDataActivity extends AppCompatActivity {
     private ActivityAddNewDataActivtiyBinding binding;
     private String URL = "https://facereco23.herokuapp.com/update";
 
+    Bitmap image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +44,17 @@ public class AddNewDataActivity extends AppCompatActivity {
         int update = getIntent().getIntExtra("update",-1);
 
         if(update == 0){
+            image = getIntent().getParcelableExtra("image");
+            binding.imageView.setImageBitmap(image);
+
+        }else if(update == 1){
             binding.imageView.setImageBitmap(getIntent().getParcelableExtra("image"));
+            binding.nameU.setText(getIntent().getStringExtra("name"));
+            binding.placeU.setText(getIntent().getStringExtra("place"));
+            binding.branchU.setText(getIntent().getStringExtra("branch"));
+            binding.yearU.setText(getIntent().getStringExtra("year"));
+            binding.fieldOfInterestU.setText(getIntent().getStringExtra("foInterest"));
+
         }
 
 
@@ -95,10 +108,8 @@ public class AddNewDataActivity extends AppCompatActivity {
     private void uploadData(String name, Bitmap image, String place, String branch, String year, String foInterest) {
 
         ProgressDialog dialog = new ProgressDialog(this);
-        dialog.setMessage("Checking database. Please Wait..");
+        dialog.setMessage("Updating database. Please Wait..");
         dialog.show();
-        binding.imageView.setVisibility(View.INVISIBLE);
-
         RequestQueue queue = Volley.newRequestQueue(this);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
@@ -107,20 +118,23 @@ public class AddNewDataActivity extends AppCompatActivity {
                 try {
                     JSONObject jsonObject = new JSONObject(response);
                     String status = jsonObject.getString("Hogaya");
-                    if(status.equals("OK")){
-                        dialog.dismiss();
-                    }
+                    dialog.dismiss();
+                    startActivity(new Intent(AddNewDataActivity.this, TakeImageActivity.class));
+
 
                 } catch (JSONException e) {
                     e.printStackTrace();
-                    dialog.dismiss();
 
+                    Toast.makeText(AddNewDataActivity.this, "Please Retry", Toast.LENGTH_SHORT).show();
+
+                    dialog.dismiss();
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                dialog.dismiss();;
+                Toast.makeText(AddNewDataActivity.this, "Please Retry", Toast.LENGTH_SHORT).show();
+                dialog.dismiss();
             }
         }){
             @Override
@@ -134,8 +148,9 @@ public class AddNewDataActivity extends AppCompatActivity {
                     jsonObject.put("branch", branch);
                     jsonObject.put("year",year);
                     jsonObject.put("studying",foInterest);
-
                     map.put("details",jsonObject.toString());
+
+
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

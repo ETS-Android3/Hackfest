@@ -8,4 +8,5 @@
     android:minHeight="?attr/actionBarSize"
     app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     android:background="@drawable/noticeboard_topbar_ele">
+
 </androidx.appcompat.widget.Toolbar>
